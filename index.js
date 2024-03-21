@@ -1,5 +1,7 @@
 const express  = require('express');
-const port = 8001;
+require('dotenv').config();
+
+const port = process.PORT ;
 
 const app = express();
 const db = require('./Config/mongoose');
@@ -15,6 +17,5 @@ app.listen(port, function(err){
         console.log("problem in connecting to server");
         return;
     }
-    console.log("connected!!");
 
 })

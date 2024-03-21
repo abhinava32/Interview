@@ -12,6 +12,6 @@ module.exports.Salary = async (req, res) => {
         console.log("error fetching the data");
         return res.status(500).json({
             message: "Internal Server Error"
-        })
+        });
     }
 }

@@ -1,15 +1,14 @@
 const mongoose = require('mongoose');
-const dbPath = 'mongodb://localhost/interview';
+const dbPath = process.env.DB_PATH;
 let db;
 try{
    db = mongoose.connect(dbPath);
-    // 'mongodb://localhost/majorProject',
+   module.exports = db.Connection;
+   
 }
 catch(err){
     console.log(err);
+    return;
 }
-finally{
-    console.log("connected to db!!");
-    module.exports = db.Connection;
-}
+return;
 
