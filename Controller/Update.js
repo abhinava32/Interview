@@ -1,11 +1,10 @@
 const Employees = require('../Models/employees');
 
-module.exports.FilterByDept = async (req, res) => {
+module.exports.Update = async (req, res) => {
     try{
-        const details = await Employees.find({"department": req.params.department});
+        const details = await Employees.findOneAndUpdate({"employee_id":req.params.id}, req.body);
         return res.status(200).json({
-            message: "received data",
-            data: details
+            message: `Updated data of ${details.first_name}`
         });
     }
     catch(error){

@@ -1,8 +1,8 @@
 const Employees = require('../Models/employees');
 
-module.exports.FilterByDept = async (req, res) => {
+module.exports.Salary = async (req, res) => {
     try{
-        const details = await Employees.find({"department": req.params.department});
+        const details = await Employees.find({}).sort("salary");
         return res.status(200).json({
             message: "received data",
             data: details
