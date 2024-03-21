@@ -6,3 +6,6 @@ API List:
 /salary                    --to get the details sorted by salary.  
 /update/<employee_id>      --to be updated data needs to be sent as the body with put method to update.   
 /delete/<employee_id>      --to delete an employee.   
+
+ *IMPORTANT*
+ No requirement to send an employee ID while adding an employee. six-digit employee ID is created randomly.
