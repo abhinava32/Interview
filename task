@@ -1,8 +1,8 @@
 
 1)Create a Endpoints for( GET, POST, UPDATE, DELETE)
-2)Create a API to search by employee_id,
-3)Create a API to filter by department.
-4)Create a API to sort by salary.
+2)Create a API to search by employee_id, --done
+3)Create a API to filter by department. --done
+4)Create a API to sort by salary.   --done
 
 {
 employee_id:'123'
